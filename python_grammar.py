@@ -31,8 +31,11 @@ def process_all(item: int | str):
 
 
 # None类型 相当于空值
-def say_something(name: int | None = None):
+def say_hi(name: str | None = None):
     if name is not None:
         print(f"Hey {name}!")
     else:
         print("Hello World!")
+
+say_hi("张三")
+say_hi()
