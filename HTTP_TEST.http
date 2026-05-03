@@ -1,0 +1,20 @@
+### 1、复杂数据校验
+GET http://localhost:8000/users/123
+
+### 2、元注解校验的写法测试
+GET http://localhost:8000/users2/1231
+
+### 3、查询参数
+GET http://localhost:8000/goods/123456?q=hello&short=false
+
+### 4、图书查询
+GET http://localhost:8000/books/123456
+
+### 5、图书查询2
+GET http://localhost:8000/books2/123456?page=1
+
+### 6、获取请求头Header
+GET http://localhost:8000/items/123?q=1&k=2&v=abc
+
+### 7、获取多值请求头Header 需要浏览器请求
+GET http://localhost:8000/items2/123
