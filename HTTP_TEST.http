@@ -18,3 +18,47 @@ GET http://localhost:8000/items/123?q=1&k=2&v=abc
 
 ### 7、获取多值请求头Header 需要浏览器请求
 GET http://localhost:8000/items2/123
+
+
+### 8、复习fastapi，对应07，需要在浏览器中访问
+GET http://localhost:8000/items/123?q=hello
+
+
+### 9、POST请求测试
+POST http://localhost:8000/body
+Content-Type: application/json
+
+{
+  "username": "wang",
+  "password": "123"
+}
+
+### 10、对应pydantic对象测试
+POST http://localhost:8000/books
+Content-Type: application/json
+
+{
+  "title": "《茶馆》",
+  "author": "老舍",
+  "price": 12.23
+}
+
+### 11、测试表单
+POST http://localhost:8000/form
+Content-Type: application/x-www-form-urlencoded
+
+{
+  "username": "root",
+  "password": "123456"
+}
+
+
+### 12、pydantic测试 1
+GET http://localhost:8000/items
+
+
+### 13、pydantic测试 2
+GET http://localhost:8000/request
+
+### 14、直接使用 Request
+GET http://localhost:8000/request2
